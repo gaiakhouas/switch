@@ -1,0 +1,211 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+    padding: 20px 30px 20px 30px;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    color: transparent !important;
+}
+
+select,
+input,
+button,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    background-image: none !important;
+    outline: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+label {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+select {
+    padding-left: 0px !important;
+    max-height: 220px!important;
+}
+
+#results {
+    margin-top: 60px;
+}
+
+select>option {
+    border: 0.5px solid #d8d8d8;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*******************************
+* MODAL AS LEFT/RIGHT SIDEBAR
+* Add "left" or "right" in modal parent div, after class="modal".
+* Get free snippets on bootpen.com
+*******************************/
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+    padding: 15px 15px 80px;
+}
+
+
+/*Left*/
+
+.modal.left .modal-dialog {
+    left: -1px;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left .modal-dialog {
+    left: 0;
+}
+
+
+/*Right*/
+
+.modal.right .modal-dialog {
+    right: -1px;
+}
+
+.modal.right.fade.in .modal-dialog {
+    right: 0;
+}
+
+#signModal,
+#moreInfos-modal,
+#manager-modal {
+    width: 100%;
+    border-radius: 0px!important;
+    border: 0px!important;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-title,
+.form-title {
+    font-size: 1.375rem;
+}
+
+.modal-content {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    padding: 20px;
+}
+
+.modal-body {
+    text-align: left;
+}
+
+input::placeholder {
+    color: #757575 !important;
+}
+
+.input-form {
+    margin-top: 32px;
+    height: 56px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    border: 0px!important;
+    border-bottom: 1px solid #757575 !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    background-color: #F6F6F6;
+    width: 100% !important;
+    font-size: 16px!important;
+    z-index: 0 !important;
+}
+
+.placeholder-focus {
+    position: relative;
+}
+
+.placeholder-focus::after {
+    position: absolute;
+    left: 15px;
+    top: 48px;
+    content: attr(data-placeholder);
+    pointer-events: none;
+    opacity: 0.6;
+    font-size: 16px;
+    color: #757575;
+}
+
+.changed::after {
+    position: absolute;
+    left: 15px;
+    top: 33px;
+    content: attr(data-placeholder);
+    pointer-events: none;
+    opacity: 0.6;
+    font-size: 12px;
+    color: #3175C9;
+    transition: 1s;
+}
+
+.signup,
+.signin {
+    background-color: #ffffff !important;
+    border: 0px;
+}
+
+.focused-input-error {
+    border-bottom: 1px solid #EB0000 !important;
+}
+
+.focused-input-valid {
+    border-bottom: 1px solid #238500 !important;
+}
+
+.help-input {
+    font-size: 12px;
+    padding-left: 15px;
+    position: absolute;
+}
+
+.error-input {
+    color: #EB0000 !important;
+}
+
+.footer {
+    text-align: center;
+}
